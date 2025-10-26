@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>No.1 Chinese Restaurant | Menu</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      margin: 0;
+      color: #333;
+      background: url('images/background2.jpg') center/cover no-repeat fixed;
+    }
+    h2 { text-align: center; margin-top: 2rem; color: #b32d29; }
+    details { background: #fff; border: 1px solid #ddd; border-radius: .5rem; margin: 1rem auto; max-width: 900px; }
+    summary {
+      background: #cf332d; color: #fff; padding: 1rem 1.5rem;
+      font-size: 1.2rem; font-weight: 600; cursor: pointer; border-radius: .5rem;
+    }
+    .dropdown-content { padding: 1rem 2rem; }
+    .menu-list { display: flex; flex-direction: column; gap: .6rem; }
+    .menu-row {
+      display: flex; justify-content: space-between; align-items: center;
+      border-bottom: 1px dashed #ccc; padding: .3rem 0;
+    }
+    .item-name { display: flex; gap: .4rem; align-items: center; }
+    .num { color: #888; font-weight: 500; }
+    .label { font-weight: 500; }
+    .prices { display: flex; gap: .5rem; }
+    .pill {
+      background: #f3c623; padding: .15rem .6rem; border-radius: .4rem;
+      font-size: .9rem; font-weight: 600; color: #333;
+    }
+    .section-note {
+      font-style: italic; text-align: center; margin: .5rem 0 1rem; color: #777;
+    }
+    .spicy-section {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.spicy-notice {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.85); /* adds readability on background image */
+  border: 1px solid #cf332d;
+  color: #cf332d;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.back-home-container {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.back-home-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #cf332d, #a61d19);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 14px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+  border: 2px solid #fff;
+}
+
+.back-home-btn:hover {
+  background: linear-gradient(135deg, #e64038, #b02a26);
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.35);
+}
+
+
+.pepper {
+  font-size: 1.2rem;
+  margin-right: 6px;
+}
+
+  </style>
+</head>
+
+<body>
+      <!-- Back to Home Button -->
+  <div class="back-home-container">
+    <a href="index.html" class="back-home-btn">← Back to Home</a>
+  </div>
+
+  <h2>Our Menu</h2>
+
+  <!-- ============== APPETIZERS ============== -->
+  <details class="dropdown">
+    <summary class="dropdown-header">Appetizers <span class="arrow">▶</span></summary>
+    <div class="dropdown-content">
+      <div class="menu-list">
+        <div class="menu-row"><div class="item-name"><span class="num">1.</span><span class="label">Shanghai Vegetable Spring Roll (2pcs)</span></div><div class="prices"><span class="pill">$4.00</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="num">2.</span><span class="label">Home Made Egg Roll</span></div><div class="prices"><span class="pill">$2.15</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="num">3.</span><span class="label">Shrimp Roll</span></div><div class="prices"><span class="pill">$2.35</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="num">4.</span><span class="label">🌶️ Pan Fried Wonton w. Garlic Sauce</span></div><div class="prices"><span class="pill">$7.00</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="num">5.</span><span class="label">Boneless Spare Ribs</span></div><div class="prices"><span class="pill">S $9.95</span><span class="pill">L $14.75</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="num">6.</span><span class="label">Barbeque Spare Ribs</span></div><div class="prices"><span class="pill">S (5pc) $10.00</span><span class="pill">L (10pc) $15.95</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="num">7.</span><span class="label">Shrimp Toast (4pcs)</span></div><div class="prices"><span class="pill">$5.75</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="num">8.</span><span class="label">French Fries</span></div><div class="prices"><span class="pill">S $4.15</span><span class="pill">L $6.25</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="num">9.</span><span class="label">Roast Pork Slices</span></div><div class="prices"><span class="pill">$8.50</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="num">10.</span><span class="label">Fantail Shrimp (2pcs)</span></div><div class="prices"><span class="pill">$4.95</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="num">11.</span><span class="label">Fried Meat Wonton (10pcs)</span></div><div class="prices"><span class="pill">$6.35</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="num">12.</span><span class="label">Cheese Wonton (Crab Rangoon)</span></div><div class="prices"><span class="pill">$6.35</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="num">13.</span><span class="label">Steamed or Fried Dumpling (8pc)</span></div><div class="prices"><span class="pill">$7.95</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="num">14.</span><span class="label">Steamed or Fried Vegetable Dumpling (8pcs)</span></div><div class="prices"><span class="pill">$7.95</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="num">14a.</span><span class="label">Steamed or Fried Shrimp Dumpling (8pcs)</span></div><div class="prices"><span class="pill">$7.95</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="num">15.</span><span class="label">🌶️ Cold Noodle w. Sesame Sauce</span></div><div class="prices"><span class="pill">$6.50</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="num">16.</span><span class="label">Beef on the Stick (4pcs)</span></div><div class="prices"><span class="pill">$8.95</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="num">17.</span><span class="label">Fried Chicken Finger w. Honey Mustard</span></div><div class="prices"><span class="pill">$8.95</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="num">18.</span><span class="label">Fried Donut (10pcs)</span></div><div class="prices"><span class="pill">$4.95</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="num">18a.</span><span class="label">Dim Sum (7pcs)</span></div><div class="prices"><span class="pill">$7.95</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="num">18b.</span><span class="label">Scallion Pancake</span></div><div class="prices"><span class="pill">$5.50</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="num">18c.</span><span class="label">Roast Pork Bun</span></div><div class="prices"><span class="pill">$3.50</span></div></div>
+      </div>
+    </div>
+  </details>
+
+  <!-- ============== SOUP ============== -->
+  <details class="dropdown">
+    <summary class="dropdown-header">Soup (w. Crispy Noodles) <span class="arrow">▶</span></summary>
+    <div class="dropdown-content">
+      <div class="menu-list">
+        <div class="menu-row"><div class="item-name"><span class="num">1.</span><span class="label">Wonton Soup</span></div><div class="prices"><span class="pill">Pt $3.70</span><span class="pill">Qt $6.00</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="num">2.</span><span class="label">Egg Drop Soup</span></div><div class="prices"><span class="pill">Pt $3.70</span><span class="pill">Qt $6.00</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="num">3.</span><span class="label">Wonton Egg Drop Soup</span></div><div class="prices"><span class="pill">Pt $3.95</span><span class="pill">Qt $6.25</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="num">4.</span><span class="label">🌶️ Hot &amp; Sour Soup</span></div><div class="prices"><span class="pill">Pt $4.25</span><span class="pill">Qt $6.50</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="num">5.</span><span class="label">Chicken Noodle Soup</span></div><div class="prices"><span class="pill">Pt $3.70</span><span class="pill">Qt $6.00</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="num">6.</span><span class="label">Chicken Rice Soup</span></div><div class="prices"><span class="pill">Pt $3.70</span><span class="pill">Qt $6.00</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="num">7.</span><span class="label">House Wonton Soup</span></div><div class="prices"><span class="pill">$7.95</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="num">8.</span><span class="label">Bean Curd Vegetable Soup</span></div><div class="prices"><span class="pill">$6.50</span></div></div>
+      </div>
+    </div>
+  </details>
+
+  <!-- ============== CHOW MEIN ============== -->
+  <details class="dropdown">
+    <summary class="dropdown-header">Chow Mein (w. Rice &amp; Crispy Noodles) <span class="arrow">▶</span></summary>
+    <div class="dropdown-content">
+      <div class="menu-list">
+        <div class="menu-row"><div class="item-name"><span class="label">Chicken or Pork Chow Mein</span></div><div class="prices"><span class="pill">Pt $7.50</span><span class="pill">Qt $11.20</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="label">Vegetable Chow Mein</span></div><div class="prices"><span class="pill">Pt $7.20</span><span class="pill">Qt $11.00</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="label">Beef or Shrimp Chow Mein</span></div><div class="prices"><span class="pill">Pt $7.75</span><span class="pill">Qt $11.50</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="label">House Special Chow Mein</span></div><div class="prices"><span class="pill">Pt $8.20</span><span class="pill">Qt $11.75</span></div></div>
+      </div>
+    </div>
+  </details>
+
+  <!-- ============== FRIED RICE ============== -->
+  <details class="dropdown">
+    <summary class="dropdown-header">Fried Rice <span class="arrow">▶</span></summary>
+    <div class="dropdown-content">
+      <div class="menu-list">
+        <div class="menu-row"><div class="item-name"><span class="label">Plain Fried Rice</span></div><div class="prices"><span class="pill">Pt $5.00</span><span class="pill">Qt $8.00</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="label">Roast Pork or Chicken Fried Rice</span></div><div class="prices"><span class="pill">Pt $6.50</span><span class="pill">Qt $10.20</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="label">Beef or Shrimp Fried Rice</span></div><div class="prices"><span class="pill">Pt $7.00</span><span class="pill">Qt $11.20</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="label">Vegetable Fried Rice</span></div><div class="prices"><span class="pill">Pt $6.20</span><span class="pill">Qt $10.00</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="label">Young Chow Fried Rice</span></div><div class="prices"><span class="pill">Pt $8.00</span><span class="pill">Qt $12.20</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="label">House Special Fried Rice</span></div><div class="prices"><span class="pill">Pt $7.75</span><span class="pill">Qt $12.10</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="label">36a. Pineapple Fried Rice (Choice of Roast Pork, Chicken, Beef or Shrimp)</span></div><div class="prices"><span class="pill">$12.95</span></div></div>
+        <div class="menu-row"><div class="item-name"><span class="label">36b. Egg Fried Rice</span></div><div class="prices"><span class="pill">Pt $6.50</span><span class="pill">Qt $10.20</span></div></div>
+      </div>
+    </div>
+  </details>
+    <!-- ============== LO MEIN ============== -->
+    <details class="dropdown">
+      <summary class="dropdown-header">Lo Mein <span class="arrow">▶</span></summary>
+      <div class="dropdown-content">
+        <div class="menu-list">
+          <div class="menu-row"><div class="item-name"><span class="num">1.</span><span class="label">Plain Lo Mein</span></div><div class="prices"><span class="pill">Pt $6.00</span><span class="pill">Qt $9.50</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">2.</span><span class="label">Roast Pork or Chicken Lo Mein</span></div><div class="prices"><span class="pill">Pt $7.50</span><span class="pill">Qt $11.00</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">3.</span><span class="label">Shrimp or Beef Lo Mein</span></div><div class="prices"><span class="pill">Pt $7.50</span><span class="pill">Qt $11.20</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">4.</span><span class="label">Vegetable Lo Mein</span></div><div class="prices"><span class="pill">Pt $6.75</span><span class="pill">Qt $10.50</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">5.</span><span class="label">House Lo Mein</span></div><div class="prices"><span class="pill">Pt $8.00</span><span class="pill">Qt $11.60</span></div></div>
+        </div>
+      </div>
+    </details>
+
+    <!-- ============== CHOW FUN / MEI FUN ============== -->
+    <details class="dropdown">
+      <summary class="dropdown-header">Chow Fun / Mei Fun <span class="arrow">▶</span></summary>
+      <div class="dropdown-content">
+        <div class="menu-list">
+          <div class="menu-row"><div class="item-name"><span class="num">1.</span><span class="label">Vegetable Chow Fun or Mei Fun</span></div><div class="prices"><span class="pill">$11.00</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">2.</span><span class="label">Chicken Chow Fun or Mei Fun</span></div><div class="prices"><span class="pill">$11.60</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">3.</span><span class="label">Pork Chow Fun or Mei Fun</span></div><div class="prices"><span class="pill">$11.60</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">4.</span><span class="label">Beef Chow Fun or Mei Fun</span></div><div class="prices"><span class="pill">$11.90</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">5.</span><span class="label">Shrimp Chow Fun or Mei Fun</span></div><div class="prices"><span class="pill">$11.90</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">6.</span><span class="label">House Special Chow Fun or Mei Fun</span></div><div class="prices"><span class="pill">$12.50</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">7.</span><span class="label">🌶️ Singapore Chow Fun or Mei Fun</span></div><div class="prices"><span class="pill">$12.75</span></div></div>
+        </div>
+      </div>
+    </details>
+
+    <!-- ============== UDON NOODLE ============== -->
+    <details class="dropdown">
+      <summary class="dropdown-header">Udon Noodle <span class="arrow">▶</span></summary>
+      <div class="dropdown-content">
+        <div class="menu-list">
+          <div class="menu-row"><div class="item-name"><span class="num">U1.</span><span class="label">Vegetable</span></div><div class="prices"><span class="pill">$12.50</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">U2.</span><span class="label">Chicken</span></div><div class="prices"><span class="pill">$13.20</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">U3.</span><span class="label">Jumbo Shrimp</span></div><div class="prices"><span class="pill">$14.20</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">U4.</span><span class="label">Seafood</span></div><div class="prices"><span class="pill">$14.75</span></div></div>
+        </div>
+      </div>
+    </details>
+
+    <!-- ============== PAD THAI ============== -->
+    <details class="dropdown">
+      <summary class="dropdown-header">Pad Thai <span class="arrow">▶</span></summary>
+      <div class="dropdown-content">
+        <div class="menu-list">
+          <div class="menu-row"><div class="item-name"><span class="num">P1.</span><span class="label">Vegetable</span></div><div class="prices"><span class="pill">$12.50</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">P2.</span><span class="label">Chicken</span></div><div class="prices"><span class="pill">$13.20</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">P3.</span><span class="label">Jumbo Shrimp</span></div><div class="prices"><span class="pill">$14.20</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">P4.</span><span class="label">Seafood</span></div><div class="prices"><span class="pill">$14.75</span></div></div>
+        </div>
+      </div>
+    </details>
+
+    <!-- ============== PORK ============== -->
+    <details class="dropdown">
+      <summary class="dropdown-header">Pork <span class="arrow">▶</span></summary>
+      <div class="dropdown-content">
+        <p class="section-note">w. White Rice</p>
+        <div class="menu-list">
+          <div class="menu-row"><div class="item-name"><span class="num">1.</span><span class="label">Roast Pork w. Bean Sprouts</span></div><div class="prices"><span class="pill">Pt $8.60</span><span class="pill">Qt $13.60</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">2.</span><span class="label">Roast Pork w. Broccoli</span></div><div class="prices"><span class="pill">Pt $8.60</span><span class="pill">Qt $13.60</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">3.</span><span class="label">Roast Pork w. Mushroom</span></div><div class="prices"><span class="pill">Pt $8.60</span><span class="pill">Qt $13.60</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">4.</span><span class="label">Roast Pork w. Snow Peas</span></div><div class="prices"><span class="pill">Pt $8.60</span><span class="pill">Qt $13.60</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">5.</span><span class="label">Roast Pork w. Chinese Vegetable</span></div><div class="prices"><span class="pill">Pt $8.60</span><span class="pill">Qt $13.60</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">6.</span><span class="label">Roast Pork w. Black Bean Sauce</span></div><div class="prices"><span class="pill">Pt $8.60</span><span class="pill">Qt $13.60</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">7.</span><span class="label">🌶️ Roast Pork w. Eggplant</span></div><div class="prices"><span class="pill">Pt $8.60</span><span class="pill">Qt $13.60</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">8.</span><span class="label">🌶️ Double Sauteed Sliced Pork</span></div><div class="prices"><span class="pill">Pt $8.60</span><span class="pill">Qt $13.60</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">9.</span><span class="label">🌶️ Roast Pork w. Garlic Sauce</span></div><div class="prices"><span class="pill">Pt $8.60</span><span class="pill">Qt $13.60</span></div></div>
+        </div>
+      </div>
+    </details>
+
+    <!-- ============== CHICKEN ============== -->
+    <details class="dropdown">
+      <summary class="dropdown-header">Chicken <span class="arrow">▶</span></summary>
+      <div class="dropdown-content">
+        <p class="section-note">w. White Rice</p>
+        <div class="menu-list">
+          <div class="menu-row"><div class="item-name"><span class="num">1.</span><span class="label">Chicken w. Broccoli</span></div><div class="prices"><span class="pill">Pt $8.60</span><span class="pill">Qt $13.60</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">2.</span><span class="label">Chicken w. Zucchini</span></div><div class="prices"><span class="pill">Pt $8.60</span><span class="pill">Qt $13.60</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">3.</span><span class="label">Moo Goo Gai Pan</span></div><div class="prices"><span class="pill">Pt $8.60</span><span class="pill">Qt $13.60</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">4.</span><span class="label">Sweet &amp; Sour Chicken</span></div><div class="prices"><span class="pill">Pt $8.60</span><span class="pill">Qt $13.60</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">5.</span><span class="label">🌶️ Curry Chicken UK Style</span></div><div class="prices"><span class="pill">Pt $8.60</span><span class="pill">Qt $13.60</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">6.</span><span class="label">Chicken w. Mixed Vegetables</span></div><div class="prices"><span class="pill">Pt $8.60</span><span class="pill">Qt $13.60</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">7.</span><span class="label">Chicken w. Mushroom</span></div><div class="prices"><span class="pill">Pt $8.60</span><span class="pill">Qt $13.60</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">8.</span><span class="label">Chicken w. Snow Peas</span></div><div class="prices"><span class="pill">Pt $8.60</span><span class="pill">Qt $13.60</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">9.</span><span class="label">Chicken w. Black Bean Sauce</span></div><div class="prices"><span class="pill">Pt $8.60</span><span class="pill">Qt $13.60</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">10.</span><span class="label">Chicken w. String Bean</span></div><div class="prices"><span class="pill">Pt $8.60</span><span class="pill">Qt $13.60</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">11.</span><span class="label">🌶️ Chicken w. Garlic Sauce</span></div><div class="prices"><span class="pill">Pt $8.60</span><span class="pill">Qt $13.60</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">12.</span><span class="label">🌶️ Hunan Chicken</span></div><div class="prices"><span class="pill">Pt $8.60</span><span class="pill">Qt $13.60</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">13.</span><span class="label">🌶️ Kung Po Chicken</span></div><div class="prices"><span class="pill">Pt $8.60</span><span class="pill">Qt $13.60</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">14.</span><span class="label">Chicken w. Cashew Nuts</span></div><div class="prices"><span class="pill">Pt $8.60</span><span class="pill">Qt $13.60</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">15.</span><span class="label">🌶️ Hot &amp; Spicy Shredded Chicken</span></div><div class="prices"><span class="pill">Pt $8.60</span><span class="pill">Qt $13.60</span></div></div>
+          <div class="menu-row"><div class="item-name"><span class="num">16.</span><span class="label">🌶️ Chicken w. Eggplant</span></div><div class="prices"><span class="pill">Pt $8.60</span><span class="pill">Qt $13.60</span></div></div>
+        </div>
+      </div>
+    </details>
+
+    <!-- ============== BEEF ============== -->
+    <details class="dropdown">
+  <summary class="dropdown-header">Beef <span class="arrow"></span></summary>
+  <div class="dropdown-content">
+    <p class="section-note">w. White Rice</p>
+    <div class="menu-list">
+      <div class="menu-row"><div class="item-name"><span class="num">1.</span><span class="label">Beef w. Broccoli</span></div></div>
+      <div class="menu-row"><div class="item-name"><span class="num">2.</span><span class="label">Beef w. Mixed Vegetables</span></div></div>
+      <div class="menu-row"><div class="item-name"><span class="num">3.</span><span class="label">Beef w. Mushroom</span></div></div>
+      <div class="menu-row"><div class="item-name"><span class="num">4.</span><span class="label">Beef w. Oyster Sauce</span></div></div>
+      <div class="menu-row"><div class="item-name"><span class="num">5.</span><span class="label">Beef w. Snow Peas</span></div></div>
+      <div class="menu-row"><div class="item-name"><span class="num">6.</span><span class="label">Beef w. String Bean</span></div></div>
+    </div>
+  </div>
+</details>
+  <!-- ============== SEAFOOD ============== -->
+  <details class="dropdown">
+    <summary class="dropdown-header">Seafood (w. White Rice) <span class="arrow">▶</span></summary>
+    <div class="dropdown-content">
+      <div class="menu-list">
+        <div class="menu-row"><div class="item-name">Shrimp w. Broccoli</div><div class="prices"><span class="pill">Pt $9.00</span><span class="pill">Qt $14.40</span></div></div>
+        <div class="menu-row"><div class="item-name">Shrimp w. Lobster Sauce</div><div class="prices"><span class="pill">Pt $9.00</span><span class="pill">Qt $14.40</span></div></div>
+        <div class="menu-row"><div class="item-name">Shrimp w. Black Bean Sauce</div><div class="prices"><span class="pill">Pt $9.00</span><span class="pill">Qt $14.40</span></div></div>
+        <div class="menu-row"><div class="item-name">Shrimp w. Chinese Vegetable</div><div class="prices"><span class="pill">Pt $9.00</span><span class="pill">Qt $14.40</span></div></div>
+        <div class="menu-row"><div class="item-name">Shrimp w. Bean Sprouts</div><div class="prices"><span class="pill">Pt $9.00</span><span class="pill">Qt $14.40</span></div></div>
+        <div class="menu-row"><div class="item-name">Shrimp w. Snow Peas</div><div class="prices"><span class="pill">Pt $9.00</span><span class="pill">Qt $14.40</span></div></div>
+        <div class="menu-row"><div class="item-name">Shrimp w. Mixed Vegetable</div><div class="prices"><span class="pill">Pt $9.00</span><span class="pill">Qt $14.40</span></div></div>
+        <div class="menu-row"><div class="item-name">🌶️ Hot & Spicy Shrimp</div><div class="prices"><span class="pill">Pt $9.00</span><span class="pill">Qt $14.40</span></div></div>
+        <div class="menu-row"><div class="item-name">Shrimp w. Cashew Nuts</div><div class="prices"><span class="pill">Pt $9.00</span><span class="pill">Qt $14.40</span></div></div>
+        <div class="menu-row"><div class="item-name">🌶️ Shrimp w. Garlic Sauce</div><div class="prices"><span class="pill">Pt $9.00</span><span class="pill">Qt $14.40</span></div></div>
+        <div class="menu-row"><div class="item-name">🌶️ Curry Shrimp UK Style</div><div class="prices"><span class="pill">Pt $9.00</span><span class="pill">Qt $14.40</span></div></div>
+        <div class="menu-row"><div class="item-name">🌶️ Kung Po Shrimp</div><div class="prices"><span class="pill">Pt $9.00</span><span class="pill">Qt $14.40</span></div></div>
+        <div class="menu-row"><div class="item-name">Shrimp w. Zucchini</div><div class="prices"><span class="pill">Pt $9.00</span><span class="pill">Qt $14.40</span></div></div>
+        <div class="menu-row"><div class="item-name">🌶️ Hunan Shrimp</div><div class="prices"><span class="pill">Pt $9.00</span><span class="pill">Qt $14.40</span></div></div>
+        <div class="menu-row"><div class="item-name">Shrimp w. String Bean</div><div class="prices"><span class="pill">Pt $9.00</span><span class="pill">Qt $14.40</span></div></div>
+        <div class="menu-row"><div class="item-name">Shrimp w. Oyster Sauce</div><div class="prices"><span class="pill">Pt $9.00</span><span class="pill">Qt $14.40</span></div></div>
+        <div class="menu-row"><div class="item-name">99a. Sweet & Sour Shrimp</div><div class="prices"><span class="pill">Pt $9.00</span><span class="pill">Qt $14.40</span></div></div>
+      </div>
+    </div>
+  </details>
+
+  <!-- ============== VEGETABLE ============== -->
+  <details class="dropdown">
+    <summary class="dropdown-header">Vegetable (w. White Rice) <span class="arrow">▶</span></summary>
+    <div class="dropdown-content">
+      <div class="menu-list">
+        <div class="menu-row"><div class="item-name">Sauteed Broccoli w. Brown Sauce</div><div class="prices"><span class="pill">Pt $7.50</span><span class="pill">Qt $11.50</span></div></div>
+        <div class="menu-row"><div class="item-name">Vegetable Delight</div><div class="prices"><span class="pill">Pt $7.50</span><span class="pill">Qt $11.50</span></div></div>
+        <div class="menu-row"><div class="item-name">Sauteed String Bean</div><div class="prices"><span class="pill">Pt $7.50</span><span class="pill">Qt $11.50</span></div></div>
+        <div class="menu-row"><div class="item-name">🌶️ Eggplant w. Garlic Sauce</div><div class="prices"><span class="pill">$11.50</span></div></div>
+        <div class="menu-row"><div class="item-name">Tofu w. Broccoli</div><div class="prices"><span class="pill">$11.50</span></div></div>
+        <div class="menu-row"><div class="item-name">🌶️ General Tso’s or Sesame Tofu</div><div class="prices"><span class="pill">$13.20</span></div></div>
+      </div>
+    </div>
+  </details>
+
+  <!-- ============== EGG FOO YOUNG ============== -->
+  <details class="dropdown">
+    <summary class="dropdown-header">Egg Foo Young (w. White Rice & Gravy) <span class="arrow">▶</span></summary>
+    <div class="dropdown-content">
+      <div class="menu-list">
+        <div class="menu-row"><div class="item-name">Roast Pork Egg Foo Young</div><div class="prices"><span class="pill">$11.50</span></div></div>
+        <div class="menu-row"><div class="item-name">Chicken Egg Foo Young</div><div class="prices"><span class="pill">$11.50</span></div></div>
+        <div class="menu-row"><div class="item-name">Beef or Shrimp Egg Foo Young</div><div class="prices"><span class="pill">$11.50</span></div></div>
+        <div class="menu-row"><div class="item-name">Mushroom Egg Foo Young</div><div class="prices"><span class="pill">$11.50</span></div></div>
+        <div class="menu-row"><div class="item-name">Vegetable Egg Foo Young</div><div class="prices"><span class="pill">$11.50</span></div></div>
+        <div class="menu-row"><div class="item-name">House Special Egg Foo Young</div><div class="prices"><span class="pill">$11.50</span></div></div>
+      </div>
+    </div>
+  </details>
+
+  <!-- ============== MOO SHU DISHES ============== -->
+  <details class="dropdown">
+    <summary class="dropdown-header">Moo Shu Dishes (w. Pancakes & White Rice) <span class="arrow">▶</span></summary>
+    <div class="dropdown-content">
+      <div class="menu-list">
+        <div class="menu-row"><div class="item-name">Moo Shu Pork</div><div class="prices"><span class="pill">$12.20</span></div></div>
+        <div class="menu-row"><div class="item-name">Moo Shu Chicken</div><div class="prices"><span class="pill">$12.20</span></div></div>
+        <div class="menu-row"><div class="item-name">Moo Shu Shrimp or Beef</div><div class="prices"><span class="pill">$12.20</span></div></div>
+        <div class="menu-row"><div class="item-name">Moo Shu Vegetable</div><div class="prices"><span class="pill">$12.00</span></div></div>
+      </div>
+    </div>
+  </details>
+
+  <!-- ============== CHEF'S SPECIALTIES ============== -->
+  <details class="dropdown">
+    <summary class="dropdown-header">Chef’s Specialties (w. White or Brown Rice) <span class="arrow">▶</span></summary>
+    <div class="dropdown-content">
+      <div class="menu-list">
+        <div class="menu-row"><div class="item-name">S1. 🌶️ General Tso’s Chicken</div><div class="prices"><span class="pill">$14.20</span></div></div>
+        <div class="menu-row"><div class="item-name">S2. Sesame Chicken</div><div class="prices"><span class="pill">$14.20</span></div></div>
+        <div class="menu-row"><div class="item-name">S3. Bourbon Chicken</div><div class="prices"><span class="pill">$14.20</span></div></div>
+        <div class="menu-row"><div class="item-name">S4. Salted Pepper Chicken</div><div class="prices"><span class="pill">$14.20</span></div></div>
+        <div class="menu-row"><div class="item-name">S5. Hawaiian Pineapple Chicken</div><div class="prices"><span class="pill">$14.20</span></div></div>
+        <div class="menu-row"><div class="item-name">S6. Coconut Chicken</div><div class="prices"><span class="pill">$14.20</span></div></div>
+        <div class="menu-row"><div class="item-name">S7. Sesame Beef</div><div class="prices"><span class="pill">$14.50</span></div></div>
+        <div class="menu-row"><div class="item-name">S8. 🌶️ Orange Flavor Beef or Chicken</div><div class="prices"><span class="pill">$14.50</span></div></div>
+        <div class="menu-row"><div class="item-name">S9. Coconut Shrimp</div><div class="prices"><span class="pill">$14.50</span></div></div>
+        <div class="menu-row"><div class="item-name">S10. 🌶️ General Tso’s Sesame Shrimp</div><div class="prices"><span class="pill">$14.50</span></div></div>
+        <div class="menu-row"><div class="item-name">S11. Seafood Delight</div><div class="prices"><span class="pill">$15.00</span></div></div>
+        <div class="menu-row"><div class="item-name">S12. Happy Family</div><div class="prices"><span class="pill">$15.00</span></div></div>
+        <div class="menu-row"><div class="item-name">S13. 🌶️ Dragon Meets Phoenix</div><div class="prices"><span class="pill">$14.50</span></div></div>
+        <div class="menu-row"><div class="item-name">S14. Four Seasons</div><div class="prices"><span class="pill">$14.75</span></div></div>
+        <div class="menu-row"><div class="item-name">S15. 🌶️ Shrimp, Beef, Chicken in Hot Garlic Sauce</div><div class="prices"><span class="pill">$15.00</span></div></div>
+        <div class="menu-row"><div class="item-name">S16. Shanghai Bok Choy w. Chicken</div><div class="prices"><span class="pill">$14.00</span></div></div>
+        <div class="menu-row"><div class="item-name">S17. Shanghai Bok Choy w. Jumbo Shrimp</div><div class="prices"><span class="pill">$14.50</span></div></div>
+        <div class="menu-row"><div class="item-name">S18. 🌶️ Shrimp w. Eggplant</div><div class="prices"><span class="pill">$14.40</span></div></div>
+        <div class="menu-row"><div class="item-name">S19. Crispy Rainbow Beef</div><div class="prices"><span class="pill">$14.50</span></div></div>
+        <div class="menu-row"><div class="item-name">S20. Beef & Scallop w. Broccoli</div><div class="prices"><span class="pill">$14.50</span></div></div>
+        <div class="menu-row"><div class="item-name">S21. Chicken, Beef, Shrimp w. Zucchini in Brown Sauce</div><div class="prices"><span class="pill">$15.00</span></div></div>
+        <div class="menu-row"><div class="item-name">S22. 🌶️ Shrimp & Scallop w. Garlic Sauce</div><div class="prices"><span class="pill">$15.00</span></div></div>
+      </div>
+    </div>
+  </details>
+
+  <!-- ============== COMBINATION PLATES ============== -->
+  <details class="dropdown">
+    <summary class="dropdown-header">Combination Plates (w. Egg Roll & Roast Pork Fried Rice) <span class="arrow">▶</span></summary>
+    <div class="dropdown-content">
+      <div class="menu-list">
+        <div class="menu-row"><div class="item-name">C1. 🌶️ General Tso’s Chicken</div><div class="prices"><span class="pill">$11.60</span></div></div>
+        <div class="menu-row"><div class="item-name">C2. Sesame Chicken</div><div class="prices"><span class="pill">$11.60</span></div></div>
+        <div class="menu-row"><div class="item-name">C3. Bourbon Chicken</div><div class="prices"><span class="pill">$11.60</span></div></div>
+        <div class="menu-row"><div class="item-name">C4. 🌶️ Orange Flavor Chicken</div><div class="prices"><span class="pill">$11.60</span></div></div>
+        <div class="menu-row"><div class="item-name">C5. Sweet & Sour Chicken</div><div class="prices"><span class="pill">$11.40</span></div></div>
+        <div class="menu-row"><div class="item-name">C6. Fried Chicken Finger w. Honey Mustard</div><div class="prices"><span class="pill">$11.40</span></div></div>
+        <div class="menu-row"><div class="item-name">C7. Chicken w. Cashew Nut</div><div class="prices"><span class="pill">$11.40</span></div></div>
+        <div class="menu-row"><div class="item-name">C8. 🌶️ Kung Pao Chicken</div><div class="prices"><span class="pill">$11.40</span></div></div>
+        <div class="menu-row"><div class="item-name">C9. 🌶️ Curry Chicken w. Onion</div><div class="prices"><span class="pill">$11.40</span></div></div>
+        <div class="menu-row"><div class="item-name">C10. Chicken w. String Bean</div><div class="prices"><span class="pill">$11.40</span></div></div>
+        <div class="menu-row"><div class="item-name">C11. Chicken w. Mushroom</div><div class="prices"><span class="pill">$11.40</span></div></div>
+        <div class="menu-row"><div class="item-name">C12. Chicken w. Mixed Vegetable</div><div class="prices"><span class="pill">$11.40</span></div></div>
+        <div class="menu-row"><div class="item-name">C13. Chicken w. Snow Peas</div><div class="prices"><span class="pill">$11.40</span></div></div>
+        <div class="menu-row"><div class="item-name">C14. Chicken w. Broccoli</div><div class="prices"><span class="pill">$11.40</span></div></div>
+        <div class="menu-row"><div class="item-name">C15. 🌶️ Chicken w. Garlic Sauce</div><div class="prices"><span class="pill">$11.40</span></div></div>
+        <div class="menu-row"><div class="item-name">C16. Chicken or Roast Pork Lo Mein</div><div class="prices"><span class="pill">$11.40</span></div></div>
+        <div class="menu-row"><div class="item-name">C17. Chicken or Roast Pork Egg Foo Young</div><div class="prices"><span class="pill">$11.40</span></div></div>
+        <div class="menu-row"><div class="item-name">C18. Chicken Chow Mein</div><div class="prices"><span class="pill">$11.40</span></div></div>
+        <div class="menu-row"><div class="item-name">C19. Boneless Spare Ribs</div><div class="prices"><span class="pill">$12.20</span></div></div>
+        <div class="menu-row"><div class="item-name">C20. BBQ Spare Ribs</div><div class="prices"><span class="pill">$12.20</span></div></div>
+        <div class="menu-row"><div class="item-name">C21. Shrimp Chow Mein</div><div class="prices"><span class="pill">$11.40</span></div></div>
+        <div class="menu-row"><div class="item-name">C22. Shrimp Egg Foo Young</div><div class="prices"><span class="pill">$11.40</span></div></div>
+        <div class="menu-row"><div class="item-name">C23. Beef or Shrimp Lo Mein</div><div class="prices"><span class="pill">$11.40</span></div></div>
+        <div class="menu-row"><div class="item-name">C24. Coconut Chicken</div><div class="prices"><span class="pill">$11.40</span></div></div>
+        <div class="menu-row"><div class="item-name">C25. Beef or Shrimp w. Broccoli</div><div class="prices"><span class="pill">$11.60</span></div></div>
+        <div class="menu-row"><div class="item-name">C26. 🌶️ Beef or Shrimp w. Garlic Sauce</div><div class="prices"><span class="pill">$11.60</span></div></div>
+        <div class="menu-row"><div class="item-name">C27. Beef or Shrimp w. Mixed Vegetables</div><div class="prices"><span class="pill">$11.60</span></div></div>
+        <div class="menu-row"><div class="item-name">C28. Pepper Steak w. Onion</div><div class="prices"><span class="pill">$11.60</span></div></div>
+        <div class="menu-row"><div class="item-name">C29. 🌶️ Hot & Spicy Beef or Shrimp</div><div class="prices"><span class="pill">$11.60</span></div></div>
+        <div class="menu-row"><div class="item-name">C30. Shrimp w. Lobster Sauce</div><div class="prices"><span class="pill">$11.60</span></div></div>
+        <div class="menu-row"><div class="item-name">C31. Shrimp w. Cashew Nut</div><div class="prices"><span class="pill">$11.60</span></div></div>
+        <div class="menu-row"><div class="item-name">C32. 🌶️ Curry Shrimp w. Onion</div><div class="prices"><span class="pill">$11.60</span></div></div>
+        <div class="menu-row"><div class="item-name">C33. Shrimp w. Chinese Vegetables</div><div class="prices"><span class="pill">$11.60</span></div></div>
+        <div class="menu-row"><div class="item-name">C34. Vegetable Delight</div><div class="prices"><span class="pill">$10.75</span></div></div>
+        <div class="menu-row"><div class="item-name">C35. 🌶️ Broccoli w. Garlic Sauce</div><div class="prices"><span class="pill">$10.75</span></div></div>
+        <div class="menu-row"><div class="item-name">C36. Chicken w. Teriyaki Sauce</div><div class="prices"><span class="pill">$11.40</span></div></div>
+      </div>
+    </div>
+  </details>
+
+  <!-- ============== AMERICAN DISHES ============== -->
+  <details class="dropdown">
+    <summary class="dropdown-header">American Dishes <span class="arrow">▶</span></summary>
+    <div class="dropdown-content">
+      <div class="section-note">Plain • w. French Fries or Plain F.R • Pork/Chicken F.R • Beef/Shrimp F.R</div>
+      <div class="menu-list">
+        <div class="menu-row"><div class="item-name">A1. Fried Chicken Wings (4pcs)</div><div class="prices"><span class="pill">Plain $7.75</span><span class="pill">FF/Plain FR $9.75</span><span class="pill">Pork/Chicken FR $9.75</span><span class="pill">Beef/Shrimp FR $9.95</span></div></div>
+        <div class="menu-row"><div class="item-name">A2. Fried Half (½) Chicken</div><div class="prices"><span class="pill">Plain $8.25</span><span class="pill">FF/Plain FR $10.25</span><span class="pill">Pork/Chicken FR $10.25</span><span class="pill">Beef/Shrimp FR $10.50</span></div></div>
+        <div class="menu-row"><div class="item-name">A3. Honey Chicken Wing</div><div class="prices"><span class="pill">Plain $8.95</span><span class="pill">FF/Plain FR $10.50</span><span class="pill">Pork/Chicken FR $10.50</span><span class="pill">Beef/Shrimp FR $10.95</span></div></div>
+        <div class="menu-row"><div class="item-name">A4. Fried Chicken Nuggets (10pcs)</div><div class="prices"><span class="pill">Plain $5.50</span><span class="pill">FF/Plain FR $7.95</span><span class="pill">Pork/Chicken FR $8.25</span><span class="pill">Beef/Shrimp FR $8.75</span></div></div>
+        <div class="menu-row"><div class="item-name">A5. Fried Scallop (10pcs)</div><div class="prices"><span class="pill">Plain $5.50</span><span class="pill">FF/Plain FR $7.95</span><span class="pill">Pork/Chicken FR $8.25</span><span class="pill">Beef/Shrimp FR $8.75</span></div></div>
+        <div class="menu-row"><div class="item-name">A6. Fried Shrimp</div><div class="prices"><span class="pill">Plain $7.25</span><span class="pill">FF/Plain FR $9.25</span><span class="pill">Pork/Chicken FR $9.50</span><span class="pill">Beef/Shrimp FR $9.95</span></div></div>
+      </div>
+    </div>
+  </details>
+
+  <!-- ============== WEIGHT WATCHER SPECIALTIES ============== -->
+  <details class="dropdown">
+    <summary class="dropdown-header">Weight Watcher Specialties (w. White or Brown Rice & Garlic Sauce on side) <span class="arrow">▶</span></summary>
+    <div class="dropdown-content">
+      <div class="menu-list">
+        <div class="menu-row"><div class="item-name">W1. Steamed Mixed Vegetables</div><div class="prices"><span class="pill">$11.50</span></div></div>
+        <div class="menu-row"><div class="item-name">W2. Steamed Triple Delight (Chicken, Shrimp, Beef)</div><div class="prices"><span class="pill">$14.20</span></div></div>
+        <div class="menu-row"><div class="item-name">W3. Steamed Chicken w. Mixed Vegetable</div><div class="prices"><span class="pill">$13.60</span></div></div>
+        <div class="menu-row"><div class="item-name">W4. Steamed Beef w. Mixed Vegetable</div><div class="prices"><span class="pill">$14.40</span></div></div>
+        <div class="menu-row"><div class="item-name">W5. Steamed Shrimp w. Mixed Vegetable</div><div class="prices"><span class="pill">$14.40</span></div></div>
+        <div class="menu-row"><div class="item-name">W6. Green Jade (Broccoli, String bean, Snow peas)</div><div class="prices"><span class="pill">$11.50</span></div></div>
+        <div class="menu-row"><div class="item-name">W7. Steam Shanghai Bok Choy</div><div class="prices"><span class="pill">$11.75</span></div></div>
+        <div class="menu-row"><div class="item-name">W8. Steamed Shrimp w. Broccoli</div><div class="prices"><span class="pill">$14.40</span></div></div>
+        <div class="menu-row"><div class="item-name">W9. Steamed Chicken w. String Bean</div><div class="prices"><span class="pill">$13.60</span></div></div>
+        <div class="menu-row"><div class="item-name">W10. Steamed Chicken w. Broccoli</div><div class="prices"><span class="pill">$13.60</span></div></div>
+        <div class="menu-row"><div class="item-name">W11. Steamed Chicken w. Shanghai Bok Choy</div><div class="prices"><span class="pill">$14.00</span></div></div>
+        <div class="menu-row"><div class="item-name">W12. Sliced Chicken</div><div class="prices"><span class="pill">S $11.25</span><span class="pill">L $19.25</span></div></div>
+      </div>
+    </div>
+  </details>
+
+  <!-- ============== CHINATOWN STYLE NOODLE SOUP ============== -->
+  <details class="dropdown">
+    <summary class="dropdown-header">Chinatown Style Noodle Soup <span class="arrow">▶</span></summary>
+    <div class="dropdown-content">
+      <div class="menu-list">
+        <div class="menu-row"><div class="item-name">N1. Seafood Noodle Soup</div><div class="prices"><span class="pill">$9.20</span></div></div>
+        <div class="menu-row"><div class="item-name">N2. Roast Pork & Wonton Noodle Soup</div><div class="prices"><span class="pill">$9.00</span></div></div>
+        <div class="menu-row"><div class="item-name">N3. Vegetable Noodle Soup</div><div class="prices"><span class="pill">$7.75</span></div></div>
+        <div class="menu-row"><div class="item-name">N4. Wonton Noodle Soup</div><div class="prices"><span class="pill">$7.75</span></div></div>
+        <div class="menu-row"><div class="item-name">N5. House Chinatown Noodle Soup</div><div class="prices"><span class="pill">$9.50</span></div></div>
+        <div class="menu-row"><div class="item-name">N6. Beef Noodle Soup</div><div class="prices"><span class="pill">$9.20</span></div></div>
+        <div class="menu-row"><div class="item-name">N7. Jumbo Shrimp Noodle Soup</div><div class="prices"><span class="pill">$9.20</span></div></div>
+        <div class="menu-row"><div class="item-name">N8. White Meat Chicken Noodle Soup</div><div class="prices"><span class="pill">$9.20</span></div></div>
+        <div class="menu-row"><div class="item-name">N9. Pork Dumpling Noodle Soup</div><div class="prices"><span class="pill">$9.20</span></div></div>
+      </div>
+    </div>
+  </details>
+
+  <!-- ============== SIDE ORDERS (before UK Style Menu) ============== -->
+  <details class="dropdown">
+    <summary class="dropdown-header">Side Orders <span class="arrow">▶</span></summary>
+    <div class="dropdown-content">
+      <div class="menu-list">
+        <div class="menu-row"><div class="item-name">Brown Rice</div><div class="prices"><span class="pill">Pt $2.25</span><span class="pill">Qt $4.00</span></div></div>
+        <div class="menu-row"><div class="item-name">White Rice</div><div class="prices"><span class="pill">Pt $2.00</span><span class="pill">Qt $3.75</span></div></div>
+        <div class="menu-row"><div class="item-name">Crispy Noodles</div><div class="prices"><span class="pill">$1.00</span></div></div>
+        <div class="menu-row"><div class="item-name">Fortune Cookies (10pcs)</div><div class="prices"><span class="pill">$1.50</span></div></div>
+        <div class="menu-row"><div class="item-name">Soda</div><div class="prices"><span class="pill">Can $1.50</span><span class="pill">Bottle $2.50</span><span class="pill">2L $3.75</span></div></div>
+        <div class="menu-row"><div class="item-name">Almond Cookies</div><div class="prices"><span class="pill">$1.50</span></div></div>
+        <div class="menu-row"><div class="item-name">Prawn Crackers</div><div class="prices"><span class="pill">$3.00</span></div></div>
+      </div>
+    </div>
+  </details>
+
+  <!-- ============== UK STYLE MENU ============== -->
+  <details class="dropdown">
+    <summary class="dropdown-header">UK Style Menu <span class="arrow">▶</span></summary>
+    <div class="dropdown-content">
+      <div class="menu-list">
+        <div class="section-note">Appetizer / Side</div>
+        <div class="menu-row"><div class="item-name">Prawn Crackers</div><div class="prices"><span class="pill">$3.00</span></div></div>
+        <div class="menu-row"><div class="item-name">French Fries (Chips)</div><div class="prices"><span class="pill">S $4.25</span><span class="pill">L $6.25</span></div></div>
+        <div class="menu-row"><div class="item-name">Boneless Spare Ribs</div><div class="prices"><span class="pill">S $9.95</span><span class="pill">L $14.75</span></div></div>
+        <div class="menu-row"><div class="item-name">BBQ Spare Ribs</div><div class="prices"><span class="pill">S $10.00</span><span class="pill">L $15.95</span></div></div>
+        <div class="menu-row"><div class="item-name">Vegetable Spring Roll (2pcs)</div><div class="prices"><span class="pill">$4.00</span></div></div>
+        <div class="menu-row"><div class="item-name">🌶️ Curry Sauce</div><div class="prices"><span class="pill">S $2.75</span><span class="pill">L $5.00</span></div></div>
+        <div class="menu-row"><div class="item-name">BBQ Sauce</div><div class="prices"><span class="pill">S $2.75</span><span class="pill">L $5.00</span></div></div>
+        <div class="menu-row"><div class="item-name">🌶️ Salt & Pepper Boneless Ribs</div><div class="prices"><span class="pill">$11.00</span></div></div>
+        <div class="menu-row"><div class="item-name">🌶️ Salt & Pepper Ribs</div><div class="prices"><span class="pill">$12.95</span></div></div>
+
+        <div class="section-note">Main</div>
+        <div class="menu-row"><div class="item-name">Egg Fried Rice</div><div class="prices"><span class="pill">S $6.50</span><span class="pill">L $10.20</span></div></div>
+        <div class="menu-row"><div class="item-name">House Special Fried Rice</div><div class="prices"><span class="pill">$12.10</span></div></div>
+        <div class="menu-row"><div class="item-name">🌶️ Salt Pepper Chips</div><div class="prices"><span class="pill">$8.95</span></div></div>
+        <div class="menu-row"><div class="item-name">🌶️ Salt & Pepper Prawn</div><div class="prices"><span class="pill">$14.95</span></div></div>
+        <div class="menu-row"><div class="item-name">🌶️ Salt & Pepper Chicken</div><div class="prices"><span class="pill">$14.50</span></div></div>
+        <div class="menu-row"><div class="item-name">🌶️ Salt & Pepper Chicken Ball</div><div class="prices"><span class="pill">$14.50</span></div></div>
+        <div class="menu-row"><div class="item-name">Plain Lo Mein</div><div class="prices"><span class="pill">S $6.00</span><span class="pill">L $10.00</span></div></div>
+        <div class="menu-row"><div class="item-name">🌶️ Curry Chicken Combo</div><div class="prices"><span class="pill">$11.75</span></div></div>
+        <div class="menu-row"><div class="item-name">🌶️ Curry Beef Combo</div><div class="prices"><span class="pill">$12.50</span></div></div>
+        <div class="menu-row"><div class="item-name">🌶️ UK Style Curry Chicken</div><div class="prices"><span class="pill">S $8.75</span><span class="pill">L $13.75</span></div></div>
+        <div class="menu-row"><div class="item-name">🌶️ UK Style Curry Beef</div><div class="prices"><span class="pill">S $9.00</span><span class="pill">L $14.50</span></div></div>
+
+        <div class="section-note">3 in 1s</div>
+        <div class="menu-row"><div class="item-name">🌶️ Egg F.R, Curry, Chips</div><div class="prices"><span class="pill">$11.50</span></div></div>
+        <div class="menu-row"><div class="item-name">🌶️ Egg F.R, Curry, Salt & Pepper Chips</div><div class="prices"><span class="pill">$13.00</span></div></div>
+        <div class="menu-row"><div class="item-name">🌶️ Egg F.R, Curry, Salt & Pepper Chicken</div><div class="prices"><span class="pill">$13.95</span></div></div>
+        <div class="menu-row"><div class="item-name">🌶️ Egg F.R, Curry, Lo Mein</div><div class="prices"><span class="pill">$11.50</span></div></div>
+        <div class="menu-row"><div class="item-name">🌶️ Chips, Curry, Lo Mein</div><div class="prices"><span class="pill">$11.95</span></div></div>
+
+        <div class="section-note">4 in 1s</div>
+        <div class="menu-row"><div class="item-name">🌶️ Egg F.R, Curry, Chips, Chicken</div><div class="prices"><span class="pill">$14.95</span></div></div>
+        <div class="menu-row"><div class="item-name">🌶️ Egg F.R, Curry, Chips, Lo Mein</div><div class="prices"><span class="pill">$14.95</span></div></div>
+      </div>
+    </div>
+  </details>
+
+ <!-- 🌶️ Legend -->
+<section class="spicy-section">
+  <div class="spicy-notice">
+    <span class="pepper">🌶️</span> Indicates a <strong>spicy dish</strong>
+  </div>
+</section>
+
+
+
+
+
+
+<script>
+  // (No extra JS needed; <details> handles collapse)
+</script>
+</body>
+</html>
+
+
